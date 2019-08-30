@@ -1,0 +1,7 @@
+public boolean shareDigit(int a, int b) {
+  int lA = a / 10;
+  int rA = a % 10;
+  int lB = b / 10;
+  int rB = b % 10;
+  return lA == lB || lA == rB || rA == lB || rA == rB;
+}
