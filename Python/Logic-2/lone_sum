@@ -1,0 +1,7 @@
+def lone_sum(a, b, c):
+  list = [a, b, c]
+  newList = []
+  for i in list:
+    if list.count(i) == 1:
+      newList.append(i)
+  return sum(newList)
