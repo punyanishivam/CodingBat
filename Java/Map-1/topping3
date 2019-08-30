@@ -1,0 +1,11 @@
+public Map<String, String> topping3(Map<String, String> map) {
+  if (map.containsKey("potato")) {
+    String value = map.get("potato");
+    map.put("fries", value);
+  }
+  if (map.containsKey("salad")) {
+    String value = map.get("salad");
+    map.put("spinach", value);
+  }
+  return map;
+}
