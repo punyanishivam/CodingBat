@@ -1,0 +1,9 @@
+public Map<String, String> mapAB(Map<String, String> map) {
+  if (map.containsKey("a") && map.containsKey("b")) {
+    String valueA = map.get("a");
+    String valueB = map.get("b");
+    String value = valueA + valueB;
+    map.put("ab", value);
+  }
+  return map;
+}
