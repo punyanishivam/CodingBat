@@ -1,0 +1,19 @@
+public boolean mixStart(String str) {
+  int count = 0;
+  String regex = "";
+  if (str.length() < 3) {
+    return false;
+  }
+  char[] alphabet = "abcdefghijklmnopqrstuvwxyz".toCharArray();
+  char[] numbers = "1234567890".toCharArray();
+  for (int i = 0; i < alphabet.length; i++) {
+    regex = alphabet[i] + "ix";
+    if (str.substring(0,3).matches(regex)) {
+      count++;
+    }
+  }
+  if (count > 0) {
+    return true;
+  }
+  return false;
+}
