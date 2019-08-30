@@ -1,0 +1,7 @@
+def not_string(str):
+  result = ""
+  if str.startswith("not"):
+    result = str
+  else:
+    result = "not "+ str
+  return result
