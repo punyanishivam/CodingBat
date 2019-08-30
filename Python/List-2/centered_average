@@ -1,0 +1,4 @@
+def centered_average(nums):
+  smallest = min(nums)
+  largest = max(nums)
+  return (sum(nums) - smallest - largest) / (len(nums) - 2)
