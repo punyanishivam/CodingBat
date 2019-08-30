@@ -1,0 +1,6 @@
+def cat_dog(str):
+  catCount = str.count("cat")
+  dogCount = str.count("dog")
+  if catCount == dogCount:
+    return True
+  return False
