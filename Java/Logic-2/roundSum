@@ -1,0 +1,14 @@
+public int roundSum(int a, int b, int c) {
+  return round10(a) + round10(b) + round10(c);
+}
+  
+public int round10(int num) {
+  int rem = num % 10;
+  if (rem < 5) {
+    num -= rem;
+  }
+  else {
+    num += 10 - rem;
+  }
+  return num;
+}
