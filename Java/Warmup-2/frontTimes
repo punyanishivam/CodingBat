@@ -1,0 +1,14 @@
+public String frontTimes(String str, int n) {
+  String word = "";
+  String result = "";
+  if (str.length() < 3) {
+    word = str;
+  }
+  else {
+    word = str.substring(0,3);
+  }
+  for (int i = 0; i < n; i++) {
+    result += word;
+  }
+  return result;
+}
