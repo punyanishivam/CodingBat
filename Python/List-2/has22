@@ -1,0 +1,7 @@
+def has22(nums):
+  numStr = ""
+  for i in nums:
+    numStr += str(i)
+  if "22" in numStr:
+    return True
+  return False
