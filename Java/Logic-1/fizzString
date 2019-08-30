@@ -1,0 +1,13 @@
+public String fizzString(String str) {
+  String result = "";
+  if (str.startsWith("f")) {
+    result += "Fizz";
+  }
+  if (str.endsWith("b")) {
+    result += "Buzz";
+  }
+  if (result == "") {
+    return str;
+  }
+  return result;
+}
