@@ -1,0 +1,18 @@
+public String wordAppend(String[] strings) {
+  String result = "";
+  Map<String, Integer> map = new HashMap<String, Integer>();
+  for (String string : strings) {
+    int i=0;
+    if (map.containsKey(string)) {
+      i = map.get(string) + 1;
+      map.put(string, i);
+      if (i % 2 == 0) {
+          result += string;
+      }
+    }
+    else {
+      map.put(string, i+1);
+    }
+  }
+  return result;
+}
