@@ -1,0 +1,13 @@
+public int[] maxEnd3(int[] nums) {
+  int big;
+  if (nums[0] > nums[nums.length - 1]) {
+    big = nums[0];
+  }
+  else {
+    big = nums[nums.length - 1];
+  }
+  for (int i = 0; i < nums.length; i++) {
+    nums[i] = big;
+  }
+  return nums;
+}
