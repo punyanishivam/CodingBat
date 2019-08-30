@@ -1,0 +1,4 @@
+def big_diff(nums):
+  smallest = min(nums)
+  largest = max(nums)
+  return largest - smallest
