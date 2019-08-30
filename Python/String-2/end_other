@@ -1,0 +1,6 @@
+def end_other(a, b):
+  str1 = a.lower()
+  str2 = b.lower()
+  if (str1.endswith(str2)) or (str2.endswith(str1)):
+    return True
+  return False
