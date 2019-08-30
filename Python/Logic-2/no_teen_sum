@@ -1,0 +1,10 @@
+def no_teen_sum(a, b, c):
+  list = [a, b, c]
+  sum = 0
+  for i in list:
+    if (i >= 13) & (i <= 19):
+      if (i == 15) | (i == 16):
+        sum += i
+    else:
+      sum += i
+  return sum
