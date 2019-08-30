@@ -1,0 +1,15 @@
+public int noTeenSum(int a, int b, int c) {
+  int arr[] = {a, b, c};
+  int sum = 0;
+  for (int i : arr) {
+    if ((i >= 13) && (i <= 19)) {
+      if ((i == 15) || (i == 16)) {
+        sum += i;
+      }
+    }
+    else {
+      sum += i;
+    }
+  }
+  return sum;
+}
