@@ -1,0 +1,12 @@
+def max_end3(nums):
+  first = nums[0]
+  last = nums[-1]
+  if first > last:
+    nums[0] = first
+    nums[1] = first
+    nums[2] = first
+  else:
+    nums[0] = last
+    nums[1] = last
+    nums[2] = last
+  return nums
