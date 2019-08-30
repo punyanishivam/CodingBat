@@ -1,0 +1,9 @@
+public boolean startHi(String str) {
+  if (str.length() <= 1) {
+    return false;
+  }
+  else if (str.startsWith("hi")) {
+    return true;
+  }
+  return false;
+}
