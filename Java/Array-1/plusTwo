@@ -1,0 +1,13 @@
+public int[] plusTwo(int[] a, int[] b) {
+  int c[] = new int [a.length + b.length];
+  int pos = 0;
+  for (int elem : a){
+    c[pos] = elem;
+    pos++;
+  }
+  for (int elem : b){
+    c[pos] = elem;
+    pos++;
+  }
+  return c;
+}
