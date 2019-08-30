@@ -1,0 +1,11 @@
+public boolean squirrelPlay(int temp, boolean isSummer) {
+  int minTemp = 60;
+  int maxTemp = 90;
+  if (isSummer) {
+    maxTemp = 100;
+  }
+  if (temp >= minTemp && temp <= maxTemp) {
+    return true;
+  }
+  return false;
+}
