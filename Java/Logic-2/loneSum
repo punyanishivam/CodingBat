@@ -1,0 +1,19 @@
+public int loneSum(int a, int b, int c) {
+  int sum = a + b + c;
+  if (a == c) {
+    sum -= c;
+    sum -= a;
+  }
+  if (b == c) {
+    sum -= c;
+    sum -= b;
+  }
+  if (a == b) {
+    sum -= b;
+    sum -= a;
+  }
+  if (sum < 0) {
+    return 0;
+  }
+  return sum;
+}
