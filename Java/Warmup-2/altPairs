@@ -1,0 +1,23 @@
+public String altPairs(String str) {
+  String evenStr = "";
+  String oddStr = "";
+  String result = "";
+  for (int i = 0; i < str.length(); i += 4) {
+    evenStr += str.charAt(i);
+  }
+  for (int i = 1; i < str.length(); i += 4) {
+    oddStr += str.charAt(i);
+  }
+  if (evenStr.length() > oddStr.length()) {
+    for (int i = 0; i < oddStr.length(); i++) {
+      result = result + evenStr.charAt(i) + oddStr.charAt(i);
+    }
+    return result + evenStr.substring(oddStr.length());
+  }
+  else {
+    for (int i = 0; i < evenStr.length(); i++) {
+      result = result + evenStr.charAt(i) + oddStr.charAt(i);
+    }
+    return result + oddStr.substring(evenStr.length());
+  }
+}
