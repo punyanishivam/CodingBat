@@ -1,0 +1,22 @@
+public String getSandwich(String str) {
+  int len = str.length();
+  String temp;
+  String result;
+  int start = 0;
+  int finish = 0;
+  boolean found = false;
+  if (len <= 10)
+    return "";
+  for (int i = 0; i < len - 4; i++) {
+    temp = str.substring(i, i+5);
+    if (temp.equals("bread") && found == true) {
+      finish = i;
+    }
+    if (temp.equals("bread") && found == false) {
+      start = i+5;
+      found = true;
+    }
+  }
+  result = str.substring(start,finish);
+  return result;
+}
