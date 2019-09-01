@@ -1,0 +1,10 @@
+public boolean prefixAgain(String str, int n) {
+  String prefix = str.substring(0, n);
+  int len = prefix.length();
+  for (int i = n; i < str.length() - len + 1; i++) {
+    if (str.substring(i, i + len).equals(prefix)) {
+      return true;
+    }
+  }
+  return false;
+}
