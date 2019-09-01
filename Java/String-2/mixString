@@ -1,0 +1,19 @@
+public String mixString(String a, String b) {
+  int len;
+  String big;
+  if (a.length() > b.length()) {
+    len = b.length();
+    big = a;
+  }
+  else {
+    len = a.length();
+    big = b;
+  }
+  String result = "";
+  for (int i = 0; i < len; i++) {
+    result += a.charAt(i);
+    result += b.charAt(i);
+  }
+  result += big.substring(len,big.length());
+  return result;
+}
