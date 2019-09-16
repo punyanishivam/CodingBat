@@ -1,0 +1,14 @@
+public int[] pre4(int[] nums) {
+  int index = -1;
+  for (int i = 0; i < nums.length; i++) {
+    if (nums[i] == 4) {
+      index = i;
+      break;
+    }
+  }
+  int[] res = new int[index];
+  for (int i = 0; i < index; i++) {
+    res[i] = nums[i];
+  }
+  return res;
+}
