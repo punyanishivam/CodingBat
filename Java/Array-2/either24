@@ -1,0 +1,8 @@
+public boolean either24(int[] nums) {
+  String numStr = "";
+  for (int i = 0; i < nums.length; i++) {
+    numStr += Integer.toString(nums[i]);
+  }
+  // ^ means XOR
+  return numStr.contains("44") ^ numStr.contains("22");
+}
