@@ -1,0 +1,19 @@
+public String[] fizzBuzz(int start, int end) {
+  String[] res = new String[end - start];
+  int k = 0;
+  for (int i = start; i < end; i++) {
+    String elem = "";
+    if (i % 3 == 0) {
+      elem += "Fizz";
+    }
+    if (i % 5 == 0) {
+      elem += "Buzz";
+    }
+    if (elem == "") {
+      elem = Integer.toString(i);
+    }
+    res[k] = elem;
+    k++;
+  }
+  return res;
+}
