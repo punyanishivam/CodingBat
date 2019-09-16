@@ -1,0 +1,19 @@
+public String sameEnds(String string) {
+  int mid = string.length() / 2;
+  int start = 0;
+  int end = string.length() - 1;
+  String maxString = "";
+  if (string.length() < 2) {
+    return "";
+  }
+  while(start < end) {
+    if (string.substring(0, start + 1).equals(string.substring(end, string.length()))) {
+      if (string.substring(0, start + 1).length() > maxString.length()) {
+        maxString = string.substring(0, start + 1);
+      }
+    }
+    start++;
+    end--;
+  }
+  return maxString;
+}
