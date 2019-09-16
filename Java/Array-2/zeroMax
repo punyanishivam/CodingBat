@@ -1,0 +1,20 @@
+public int[] zeroMax(int[] nums) {
+  if (nums.length < 1) {
+    return nums;
+  }
+  int big = 0;
+  if (nums[nums.length - 1] % 2 != 0) {
+    big = nums[nums.length - 1];
+  }
+  for (int i = nums.length - 1; i >= 0; i--) {
+    if (nums[i] % 2 != 0) {
+      if (nums[i] > big) {
+        big = nums[i];
+      }
+    }
+    else if (nums[i] == 0) {
+      nums[i] = big;
+    }
+  }
+  return nums;
+}
