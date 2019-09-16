@@ -1,0 +1,5 @@
+public List<String> noYY(List<String> strings) {
+  strings.replaceAll(str -> str += "y");
+  strings.removeIf(str -> str.contains("yy"));
+  return strings;
+}
