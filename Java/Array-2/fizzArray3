@@ -1,0 +1,9 @@
+public int[] fizzArray3(int start, int end) {
+  int[] res = new int[end - start];
+  int k = 0;
+  for (int i = start; i < end; i++) {
+    res[k] = i;
+    k++;
+  }
+  return res;
+}
