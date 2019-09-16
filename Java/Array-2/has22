@@ -1,0 +1,7 @@
+public boolean has22(int[] nums) {
+  String numStr = "";
+  for (int i = 0; i < nums.length; i++) {
+    numStr += Integer.toString(nums[i]);
+  }
+  return numStr.contains("22");
+}
